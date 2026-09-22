@@ -15,6 +15,9 @@ import NestedRoute from './Components/reactRouterDomCpm/NestedRoute';
 import Navbar from './Components/reactRouterDomCpm/Navbar';
 import UseStateHook from './Components/hooks/usestate/UseStateHook';
 import ShowHide from './Components/hooks/ShowHide';
+import UseEffectHook from './Components/hooks/usestate/UseEffectHook';
+import UseEffectCount from './Components/hooks/usestate/UseEffectCount';
+import UseEffectApi from './Components/hooks/usestate/UseEffectApi';
 
 function App() {
 
@@ -56,7 +59,9 @@ function App() {
 </Route>
         <Route path="/usestatehook" element={<UseStateHook/>} />
         <Route path="/showhide" element={<ShowHide/>} />
-
+        <Route path="/useeffecthook" element={<UseEffectHook/>} />
+        <Route path="/useeffectcount" element={<UseEffectCount/>} /> 
+        <Route path="/useeffectapi" element={<UseEffectApi/>} /> 
       </Routes>
       </BrowserRouter>
 
