@@ -20,6 +20,8 @@ import UseEffectCount from "./Components/hooks/usestate/UseEffectCount";
 import UseEffectApi from "./Components/hooks/usestate/UseEffectApi";
 import Parent from "./Components/Props/Parent";
 import ParentData from "./Components/props/PropsDrilling";
+import Form from "./Components/Form/Form";
+import Crud from "./Components/Form/Crud";
 
 function App() {
   return (
@@ -63,6 +65,12 @@ function App() {
           <Route path="/useeffectapi" element={<UseEffectApi />} />
           <Route path="/props" element={<Parent />} />
           <Route path="/PropsDrilling" element={<ParentData/>}/>
+          <Route path="/Form" element={<Form/>}/>
+          <Route path="/curd" element={<Crud/>}/>
+
+
+
+
         </Routes>
       </BrowserRouter>
     </>
