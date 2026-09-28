@@ -22,6 +22,9 @@ import Parent from "./Components/Props/Parent";
 import ParentData from "./Components/props/PropsDrilling";
 import Form from "./Components/Form/Form";
 import Crud from "./Components/Form/Crud";
+import UnControlledComp from "./Components/hooks/useRef/UnControlledComp";
+import WithOutMemoEx from "./Components/hooks/useMemo/WithOutMemoEx";
+import MemoEx from "./Components/hooks/useMemo/MemoEx";
 
 function App() {
   return (
@@ -67,8 +70,9 @@ function App() {
           <Route path="/PropsDrilling" element={<ParentData/>}/>
           <Route path="/Form" element={<Form/>}/>
           <Route path="/curd" element={<Crud/>}/>
-
-
+          <Route path="/useRef" element={<UnControlledComp/>}/>
+          <Route path="/useMemo" element={<WithOutMemoEx/>}/>
+          <Route path="/useMemo" element={<MemoEx/>}/>
 
 
         </Routes>
