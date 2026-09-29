@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useMemo, useState } from "react";
 
 const MemoEx = () => {
   const [count, setCount] = useState(0);
@@ -32,7 +32,7 @@ const MemoEx = () => {
         Increase Number
       </button>
 
-      <p>Result: {expensiveCalculation()}</p>
+      <p>Result: {expensiveCalculation}</p>
     </div>
   );
 };

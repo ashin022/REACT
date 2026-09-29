@@ -25,6 +25,7 @@ import Crud from "./Components/Form/Crud";
 import UnControlledComp from "./Components/hooks/useRef/UnControlledComp";
 import WithOutMemoEx from "./Components/hooks/useMemo/WithOutMemoEx";
 import MemoEx from "./Components/hooks/useMemo/MemoEx";
+import CallBackEx from "./Components/hooks/useMemo/CallBackEx";
 
 function App() {
   return (
@@ -72,8 +73,8 @@ function App() {
           <Route path="/curd" element={<Crud/>}/>
           <Route path="/useRef" element={<UnControlledComp/>}/>
           <Route path="/useMemo" element={<WithOutMemoEx/>}/>
-          <Route path="/useMemo" element={<MemoEx/>}/>
-
+          <Route path="/withmemo" element={<MemoEx/>}/>
+          <Route path="/callback" element={<CallBackEx/>}/> 
 
         </Routes>
       </BrowserRouter>
