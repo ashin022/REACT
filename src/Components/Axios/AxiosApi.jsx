@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from "react";
+import axios from 'axios'
 
-const UseEffectApi = () => {
+const AxiosApi = () => {
   const [state, setState] = useState([]);
   console.log(state, "state........");
   const fetchUsers = async () => {
     try {
-      const response = await fetch(
+      const response = await axios.get(
         "https://jsonplaceholder.typicode.com/users"
       );
       console.log(response);
-      const data = await response.json();
-      setState(data);
+
+      setState(response.data);
     } catch (err) {
       console.log(err);
     }
@@ -32,4 +33,4 @@ const UseEffectApi = () => {
   </div>;
 }
 
-export default UseEffectApi;
+export default AxiosApi;

@@ -26,6 +26,8 @@ import UnControlledComp from "./Components/hooks/useRef/UnControlledComp";
 import WithOutMemoEx from "./Components/hooks/useMemo/WithOutMemoEx";
 import MemoEx from "./Components/hooks/useMemo/MemoEx";
 import CallBackEx from "./Components/hooks/useMemo/CallBackEx";
+import AxiosApi from "./Components/Axios/AxiosApi";
+import Dashboard from "./Components/reactRouterDomCpm/Dashboard";
 
 function App() {
   return (
@@ -75,7 +77,10 @@ function App() {
           <Route path="/useMemo" element={<WithOutMemoEx/>}/>
           <Route path="/withmemo" element={<MemoEx/>}/>
           <Route path="/callback" element={<CallBackEx/>}/> 
-
+          <Route path="/axios" element={<AxiosApi/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/stud" element={<Stu/>}/>
+          
         </Routes>
       </BrowserRouter>
     </>
