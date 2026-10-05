@@ -28,6 +28,7 @@ import MemoEx from "./Components/hooks/useMemo/MemoEx";
 import CallBackEx from "./Components/hooks/useMemo/CallBackEx";
 import AxiosApi from "./Components/Axios/AxiosApi";
 import Dashboard from "./Components/reactRouterDomCpm/Dashboard";
+import CounterRtk from "./redux/CounterRtk";
 
 function App() {
   return (
@@ -79,7 +80,7 @@ function App() {
           <Route path="/callback" element={<CallBackEx/>}/> 
           <Route path="/axios" element={<AxiosApi/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
-          <Route path="/stud" element={<Stu/>}/>
+          <Route path="/counter" element={<CounterRtk/>}/>
           
         </Routes>
       </BrowserRouter>
