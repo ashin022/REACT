@@ -14,4 +14,4 @@ const CounterRtk = () => {
     )
 }
 
-export default CounterRtk()
+export default CounterRtk
